@@ -1,0 +1,15 @@
+.wy-menu{
+	text-transform: capitalize;
+}
+.rst-content blockquote{
+	margin:0 1em !important;
+	line-height: 1em !important;
+}
+
+p{
+	line-height: 1.5em;
+	margin-bottom:1em;
+}
+.toctree-l4{
+	margin-left:1em;
+}

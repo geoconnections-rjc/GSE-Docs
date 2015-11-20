@@ -1,9 +1,9 @@
 # LoopLink<sup>&reg;</sup> GSE Documentation
 
-LoopLink<sup>&reg;</sup> GSE is software service that enables companies to easily offer their customers a quick estimate of how much they can save using geothermal heating and cooling in their home.
+LoopLink<sup>&reg;</sup> GSE is a software service that enables companies to easily offer their customers a quick estimate of how much they can save using geothermal heating and cooling in their home.
 
-## Who Is LoopLink<sup>&reg;</sup> GSE For?
-LoopLink<sup>&reg;</sup> is specifically designed for companies and organizations trying to generate interest in residential geothermal heating and cooling systems through their website.
+## Who Should Use LoopLink<sup>&reg;</sup> GSE?
+LoopLink<sup>&reg;</sup> GSE is specifically designed for companies and organizations trying to generate interest in residential geothermal heating and cooling systems through their website.
 
 ## How Does LoopLink<sup>&reg;</sup> GSE Work?
 In a nutshell, companies build an interface for their website that submits a form to LoopLink<sup>&reg;</sup> GSE. Once received,  LoopLink<sup>&reg;</sup> GSE finds where on earth the address is, calculates the weather for that location and then sends back an estimate of the cost, savings and carbon emissions for using geothermal in that space versus some conventional heating and cooling system.

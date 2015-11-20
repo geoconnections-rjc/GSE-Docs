@@ -1,5 +1,5 @@
 # Building Your Interface
-There is no set way to design and build your interface however, there are some standards that you must follow in order to successfully submit requests.
+There is no set way to design and build your interface. You are given full creative control over this aspect of the calculator.  However, there are some standards that you must follow in order to successfully submit requests.
 
 ## Domain Restrictions
 To avoid abuse of your access rights by third party sites, each customer is provided a secure endpoint that will only respond to requests from a specific domain. Prior to creating your endpoint, you will need to provide Geo-Connections details with regard to the domain through which you will be submitting requests.

@@ -16,9 +16,10 @@ The following values must be sent in the request.  If any of these values are mi
 * Direct entry of signed latitude and longitude (44.3064, -96.7881)
 
 
-> **Notes:** LoopLink<sup>&reg;</sup> GSE is designed to attempt to respond successfully regardless of the location search. Inputs like 'the mall' may return a location but that location may not have anything to do with the user's actual location.
+> **Notes:**
+>> LoopLink<sup>&reg;</sup> GSE is designed to attempt to respond successfully regardless of the location search. Inputs like 'the mall' may return a location but that location may not have anything to do with the user's actual location.
 
-When using Zip/Postal Code searches, you should include a Country in order to increase the accuracy of the search especially if your target user is outside of the United States. The bulk of searches through the service originate in the U.S. so, LoopLink<sup>&reg;</sup> GSE will automatically default Zip/Postal code searches that match the same pattern as a U.S. zip code to the United States of America.
+>> When using Zip/Postal Code searches, you should include a Country in order to increase the accuracy of the search especially if your target user is outside of the United States. The bulk of searches through the service originate in the U.S. so, LoopLink<sup>&reg;</sup> GSE will automatically default Zip/Postal code searches that match the same pattern as a U.S. zip code to the United States of America.
 
 ## Above Grade Area
 

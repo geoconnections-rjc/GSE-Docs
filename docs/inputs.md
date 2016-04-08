@@ -11,7 +11,7 @@ The following values must be sent in the request.  If any of these values are mi
 
 > **Accepts:**
 >> * Complete address (1234 Road Name St., Brookings SD 57006)
-* ZIP/Postal code (57006)
+* ZIP/Postal code (57006) SEE NOTES
 * City, State/Province pair (Brookings, South Dakota)
 * Direct entry of signed latitude and longitude (44.3064, -96.7881)
 

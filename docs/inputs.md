@@ -301,9 +301,10 @@ Optional fields default to standard values but will accept user inputs to furthe
 > **Default:** Varies by age of home
 
 > **Accepts:**
->> - low
+>> - loose
+- semi-loose
 - average
-- high
+- tight
 
 ## Ductwork Placement
 > **Name:** `duct_place`

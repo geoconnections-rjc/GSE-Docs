@@ -287,7 +287,8 @@ Optional fields default to standard values but will accept user inputs to furthe
 > **Default:** good
 
 > **Accepts:**
->> - ok  (R-11 walls, R-19 ceilings)
+>> - poor (Brick Walls w/ No Insulation, R-10 Ceiling Insulation)
+- ok  (R-11 walls, R-19 ceilings)
 - good (R-19 walls, R-30 ceilings)
 - excellent (R-30 walls, R-38 ceilings)
 

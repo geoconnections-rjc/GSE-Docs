@@ -58,7 +58,7 @@ The following values must be sent in the request.  If any of these values are mi
 
 
 ## Age of Home
-> **Name:** `age_of_home`
+> **Name:** `age_home`
 
 > **Type:** Integer
 

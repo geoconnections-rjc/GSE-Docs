@@ -310,9 +310,9 @@
 
 >>> **Description:** An oversized nominal capacity of equipment that would reasonably service the space.
 
->> ### Exact Estimate
+>> ### Closest Estimate
 
->>> **Name:** `exact`
+>>> **Name:** `closest`
 
 >>> **Type:** Float
 

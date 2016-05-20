@@ -1,5 +1,18 @@
+body{
+	font-family: sans-serif;
+}
+
+.wy-side-nav-search{
+	background-color: #9C7A2C;
+}
+.wy-nav-side{
+	background-color: #4E3512;
+}
 .wy-menu{
 	text-transform: capitalize;
+}
+.wy-nav-content{
+	background-color:#FFFAE3;
 }
 .rst-content blockquote{
 	margin:0 1em !important;

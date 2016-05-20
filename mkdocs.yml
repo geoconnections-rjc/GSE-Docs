@@ -1,2 +1,3 @@
 site_name: LoopLink GSE Docs
 theme: readthedocs
+extra_css: [extra_css.css]

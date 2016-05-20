@@ -1,5 +1,9 @@
 body{
 	font-family: sans-serif;
+	background-color:#FFFAE3;
+}
+h1, h2,h3{
+	font-family: sans-serif;
 }
 
 .wy-side-nav-search{
@@ -8,11 +12,18 @@ body{
 .wy-nav-side{
 	background-color: #4E3512;
 }
+.wy-menu-vertical li.current{
+	background-color:#FFFAE3;
+}
+
+.wy-menu-vertical li.on a, .wy-menu-vertical li.current>a{
+	background-color:#FFFEFA;
+}
 .wy-menu{
 	text-transform: capitalize;
 }
 .wy-nav-content{
-	background-color:#FFFAE3;
+	background-color:#FFFEFA;
 }
 .rst-content blockquote{
 	margin:0 1em !important;

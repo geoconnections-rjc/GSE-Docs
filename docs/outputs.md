@@ -306,7 +306,7 @@
 
 >>> **Name:** `high`
 
->>> **Type:** Integer
+>>> **Type:** Float
 
 >>> **Description:** An oversized nominal capacity of equipment that would reasonably service the space.
 
@@ -322,7 +322,7 @@
 
 >>> **Name:** `low`
 
->>> **Type:** Integer
+>>> **Type:** Float
 
 >>> **Description:** An undersized nominal capacity of equipment that would reasonably service the space.
 

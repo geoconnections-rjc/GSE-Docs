@@ -13,3 +13,9 @@ Yes. LoopLink<sup>&reg;</sup> GSE can perform calculations in IP or SI and conta
 
 ## How Do We Add LoopLink<sup>&reg;</sup> GSE To Our Website?
 If you are a company interested in adding LoopLink<sup>&reg;</sup> GSE to your website, please contact Geo-Connections<sup>&reg;</sup> at 866-995-4449.
+
+## Attribution
+The following resources were used in the creation of GSE a LoopLink<sup>reg;</sup> service.
+
+> Elevation Data <a href="http://www.geonames.org/" target="_blank">GeoNames</a>
+> Weather Data from Weather Data Viewer 5.0 &copy;2013 ASHRA, www.ashrae.org. Used with permission.

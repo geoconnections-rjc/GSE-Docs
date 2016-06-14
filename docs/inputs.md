@@ -13,13 +13,43 @@ The following values must be sent in the request.  If any of these values are mi
 >> * Complete address (1234 Road Name St., Brookings SD 57006)
 * ZIP/Postal code (57006) SEE NOTES
 * City, State/Province pair (Brookings, South Dakota)
-* Direct entry of signed latitude and longitude (44.3064, -96.7881)
 
 
 > **Notes:**
 >> LoopLink<sup>&reg;</sup> GSE is designed to attempt to respond successfully regardless of the location search. Inputs like 'the mall' may return a location but that location may not have anything to do with the user's actual location.
 
 >> When using Zip/Postal Code searches, you should include a Country in order to increase the accuracy of the search especially if your target user is outside of the United States. The bulk of searches through the service originate in the U.S. so, LoopLink<sup>&reg;</sup> GSE will automatically default Zip/Postal code searches that match the same pattern as a U.S. zip code to the United States of America.
+
+### Geo-Coded Location Requests
+It is possible to directly enter a location by signed latitude and longitude. When doing so, you must specify the request is geocoded using a `geocoded` field set to True. Additionally, your request should not include `location` it should instead include `lat` and `lon`.
+
+> **Name:** `geocoded`
+
+> **Type:** Boolean
+
+> **Description:** Indicates to the server that you are providing `lat` and `lon` instead of `location`
+
+> **Default:** false
+
+> **Accepts:**
+>> - True (String or Integer):  true or a non-zero integer
+- False(String or Integer): false or 0
+
+> **Name:** `lat`
+
+> **Type:** String or Float
+
+> **Description:** Signed latitude in degrees format
+
+> **Accepts:** Any float or string representation of a number between -90 and +90
+
+> **Name:** `lon`
+
+> **Type:** String or Float
+
+> **Description:** Signed longitude in degrees format
+
+> **Accepts:** Any float or string representation of a number between -180 and +180
 
 ## Above Grade Area
 

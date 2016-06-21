@@ -286,6 +286,14 @@
 
 >>> **Description:** The unit associated with the carbon emissions figures.
 
+>> ### Reduction
+
+>>> **Name:** `reduction`
+
+>>> **Type:** Dict
+
+>>> **Description:** The difference in carbon emmissions between comparison system and GSHP. Calculated as (comp_value - gshp_value)
+
 ## Heat Pump Sizing
 
 > **Name:** `sizing`
@@ -602,3 +610,83 @@
 
 >>> **Description:** Contains a map of units associated with each of the fields in the Operating Details Dict.
 
+## Units of Energy
+
+> **Name:** `units_of_energy`
+
+> **Type:** Dict
+
+> **Description:** Contains the total number of units of energy of a specific 'fuel' that are consumed in each mode of operation by the GSHP and comparative system.
+
+>> ### Units
+
+>>> **Name:** `units`
+
+>>> **Type:** Dict
+
+>>> **Description:** Contains a map of units associated with each of the fields in the GSHP and COMP Dicts.
+
+>> ### GSHP
+
+>>> **Name:** `gshp`
+
+>>> **Type:** Dict
+
+>>> **Description:** The units of energy consumed by each operating mode of the GSHP.
+
+>> ### COMP
+
+>>> **Name:** `comp`
+
+>>> **Type:** Dict
+
+>>> **Description:** The units of energy consumed by each operating mode of the comparative system.
+
+## Monthly
+> **Name:** `monthly`
+
+> **Type:** Dict
+
+> **Description:** Monthly is a dictionary of all months in the year.  Each month is a dict of dicts `month`,`carbon`,`savings` and `units_of_energy` dict. With the exception of `month`, these dicts are structurally identical to the annual counterpart. 
+
+> **Keys:** `['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec']`
+
+>> ### Month
+
+>>> **Name:** `month`
+
+>>> **Type:** Dict
+
+>>> **Description:** The `month` dict contains useful information for displaying and organizing monthly data.
+
+>>> #### Index
+
+>>> **Name:** `index`
+
+>>> **Type:** Integer
+
+>>> **Description:** Ordinal for the month.
+
+>>> #### Index
+
+>>> **Name:** `index`
+
+>>> **Type:** Integer
+
+>>> **Description:** Ordinal for the month.
+
+>>> #### Abbreviation
+
+>>> **Name:** `abbr`
+
+>>> **Type:** String
+
+>>> **Description:** 3 character lower case abbreviation for month. These match the monthly dict keys.
+
+>>> #### Name
+
+>>> **Name:** `name`
+
+>>> **Type:** String
+
+>>> **Description:** Full month name for display.

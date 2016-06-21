@@ -651,7 +651,7 @@
 
 > **Keys:** `['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec']`
 
->> ### Month
+>> ## Month
 
 >>> **Name:** `month`
 
@@ -659,34 +659,26 @@
 
 >>> **Description:** The `month` dict contains useful information for displaying and organizing monthly data.
 
->>> #### Index
+>>>> ### Index
 
->>> **Name:** `index`
+>>>> **Name:** `index`
 
->>> **Type:** Integer
+>>>> **Type:** Integer
 
->>> **Description:** Ordinal for the month.
+>>>> **Description:** Ordinal for the month.
 
->>> #### Index
+>>>> ### Abbreviation
 
->>> **Name:** `index`
+>>>> **Name:** `abbr`
 
->>> **Type:** Integer
+>>>> **Type:** String
 
->>> **Description:** Ordinal for the month.
+>>>> **Description:** 3 character lower case abbreviation for month. These match the monthly dict keys.
 
->>> #### Abbreviation
+>>>> #### Name
 
->>> **Name:** `abbr`
+>>>> **Name:** `name`
 
->>> **Type:** String
+>>>> **Type:** String
 
->>> **Description:** 3 character lower case abbreviation for month. These match the monthly dict keys.
-
->>> #### Name
-
->>> **Name:** `name`
-
->>> **Type:** String
-
->>> **Description:** Full month name for display.
+>>>> **Description:** Full month name for display.

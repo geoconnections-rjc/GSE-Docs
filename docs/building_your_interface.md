@@ -40,9 +40,15 @@ All customers are provided a unique api key which must be included in the reques
 The Name defined in the Inputs section of this documentation must be used as the 'name' attribute for the form input element to successfully submit the contents of your form.
 
 ## Attribution
+
+### Geo-Coding
 LoopLink<sup>&reg;</sup> GSE uses a variety geo-coding services to perform location searches. All of these service providers deserve and require credit for their work. If provided in the reponse your interface must display attribution details to the end user in the results section.
 
 Failure to properly credit these service providers can result in their refusal to provide their services to us. As such, we will revoke access rights to any endpoint that is not properly crediting these services.
+
+### Powered by LoopLink<sup>&reg;</sup> GSE
+
+You must include the phrase "Powered by LoopLink<sup>&reg;</sup> GSE" with any logo or word mark used to describe the interface you build. Additionally, you must display "Powered by LoopLink<sup>&reg;</sup> GSE" as a link to http://looplinkgse.com with your results.
 
 ## Additional Guidance
 If during the design of your interface you have any questions or problems, please do not hesitate to call Geo-Connections&reg; at 866-995-4449.

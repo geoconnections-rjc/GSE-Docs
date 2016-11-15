@@ -149,6 +149,20 @@ Optional fields default to standard values but will accept user inputs to furthe
 >> - True (String or Integer):  true or a non-zero integer
 - False(String or Integer): false or 0
 
+## GSHP Is Variable Speed
+
+> **Name:** `is_variable`
+
+> **Type:** Boolean
+
+> **Description:** Adjusts the estimated performance and efficiency of the GSHP system.
+
+> **Default:** false
+
+> **Accepts:**
+>> - True (String or Integer):  true or a non-zero integer
+- False(String or Integer): false or 0
+
 ## Ignore Cooling
 
 > **Name:** `ignore_cooling`

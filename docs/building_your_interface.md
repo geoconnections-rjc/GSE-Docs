@@ -19,7 +19,7 @@ All customers are provided a unique api key which must be included in the reques
 		$.ajax(
 		{
 			url : formURL,
-			type: "POST",
+			type: "POST" , // or GET
 			data : postData,
 			crossDomain:true,
 			headers:{'x-api-key':'YOUR API KEY HERE'},

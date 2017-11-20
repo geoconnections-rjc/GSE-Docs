@@ -78,15 +78,32 @@
 
 >>> **Description:** A general warning type that may be useful for styling or handling warnings that are not field specific.
 
-## Attribution
+## Place
 
-> **Name:** `attribution`
+> **Name:** `place`
 
 > **Type:** Dict
 
-> **Description:** Contains link, name and copyright html for properly crediting the GeoCoding service used on the backed. As long the attribution name field is not set to Cached Search, you must display the attribution details along with the results of your search.
+> **Description:** Contains information about the location returned from search.
 
->> ### Name
+> ### GeoCoder
+
+>> **Name:** `geocoder`
+
+>> **Type:** String
+
+>> **Description:** The name of geocoding service used to search for the location.
+
+
+> ### Attribution
+
+>> **Name:** `attribution`
+
+>> **Type:** Dict
+
+>> **Description:** Contains link, name and copyright html for properly crediting the GeoCoding service used on the backed. As long the attribution name field is not set to Cached Search, you must display the attribution details along with the results of your search.
+
+>> #### Name
 
 >>> **Name:** `name`
 
@@ -94,7 +111,7 @@
 
 >>> **Description:** The name of the geocoding service used to resolve the searched location.
 
->> ### Link
+>> #### Link
 
 >>> **Name:** `link`
 
@@ -110,6 +127,96 @@
 
 >>> **Description:** When provided, the geocoder has a specific attribution that it prefers.If present you should insert this HTML into your results display directly.
 
+> ### City
+
+>> **Name:** `city`
+
+>> **Type:** String
+
+>> **Description:** Text string indicating the city or town for the location address.
+
+>> **Accepts:**
+>>> * Name of city, town village, hamlet, borough etc.
+
+> ### Region
+
+>> **Name:** `region`
+
+>> **Type:** String
+
+>> **Description:** Text string indicating the region typically a state or province for the searched location. Regions are the first area division under a country.
+
+> ### Region Type
+
+>> **Name:** `region_type`
+
+>> **Type:** String
+
+>> **Description:** Text string describing the region.
+
+> ### Sub-Region
+
+>> **Name:** `subregion`
+
+>> **Type:** String
+
+>> **Description:** Text string indicating the sub-region typically a county for the searched location. Sub-Regions are the first area division under a region.
+
+> ### Sub-Region Type
+
+>> **Name:** `subregion_type`
+
+>> **Type:** String
+
+>> **Description:** Text string describing the subregion.
+
+> ### Locality
+
+>> **Name:** `locality`
+
+>> **Type:** String
+
+>> **Description:** Text string indicating the locality (city, town, etc.)
+
+> ### Locality Type
+
+>> **Name:** `locality_type`
+
+>> **Type:** String
+
+>> **Description:** Text string describing the type of locality.
+
+> ### ZIP/Postal Code
+
+>> **Name:** `postal_code`
+
+>> **Type:** String
+
+>> **Description:** Text string indicating the postal code for the searched location.
+
+> ### Country
+
+>> **Name:** `country`
+
+>> **Type:** String
+
+>> **Description:** Lowercase ISO Alpha-2 countyr code for the searched location.
+
+> ### Latitude
+
+>> **Name:** `lat`
+
+>> **Type:** String or Float
+
+>> **Description:** Signed latitude in degrees format
+
+> ### Longitude
+
+>> **Name:** `lon`
+
+>> **Type:** String or Float
+
+>> **Description:** Signed longitude in degrees format
 
 ## Hot Water Generation
 

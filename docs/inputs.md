@@ -3,6 +3,8 @@ The following values must be sent in the request.  If any of these values are mi
 
 ## Location
 
+> **Status:** **DEPRECATED IN V2**
+
 > **Name:** `location`
 
 > **Type:** String
@@ -20,8 +22,68 @@ The following values must be sent in the request.  If any of these values are mi
 
 >> When using Zip/Postal Code searches, you should include a Country in order to increase the accuracy of the search especially if your target user is outside of the United States. The bulk of searches through the service originate in the U.S. so, LoopLink<sup>&reg;</sup> GSE will automatically default Zip/Postal code searches that match the same pattern as a U.S. zip code to the United States of America.
 
+## Street
+
+> **Name:** `street`
+
+> **Type:** String
+
+> **Description:** Text string indicating the street address with house/building number for the location address.
+
+> **Accepts:**
+>> * Street address 1234 Road Name St.
+
+## City
+
+> **Name:** `city`
+
+> **Type:** String
+
+> **Description:** Text string indicating the city or town for the location address.
+
+> **Accepts:**
+>> * Name of city, town village, hamlet, borough etc.
+
+## State
+
+> **Name:** `state`
+
+> **Type:** String
+
+> **Description:** Text string indicating the state or province for the location address.
+
+> **Accepts:**
+>> * Name of state, province or local geographic equivalent.
+
+## ZIP/Postal Code
+
+> **Name:** `postal_code`
+
+> **Type:** String
+
+> **Description:** Text string indicating the postal code for the location address.
+
+> **Accepts:**
+>> * Postal code for the location address.
+
+> **Notes:**
+>> If searching with only a Zip/Postal Code you muse include a Country in the request. LoopLink<sup>&reg;</sup> GSE checks if postal codes match the same pattern as a U.S. zip code and if so will append United States of America to the country automatically prior to search.
+
+## Country
+
+> **Name:** `country`
+
+> **Type:** String
+
+> **Description:** Text string indicating the country for the location address.
+
+> **Accepts:**
+>> * Name, ISO Alpha-2 or ISO Alpha-3 Code of the search location's country.
+
 ### Geo-Coded Location Requests
 It is possible to directly enter a location by signed latitude and longitude. When doing so, you must specify the request is geocoded using a `geocoded` field set to True. Additionally, your request should not include `location` it should instead include `lat` and `lon`.
+
+> **Status:** **DEPRECATED IN V2** Inclusion will not cause an error but the value will be ignored.
 
 > **Name:** `geocoded`
 

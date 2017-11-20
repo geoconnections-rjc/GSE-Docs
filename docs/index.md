@@ -1,5 +1,7 @@
 # LoopLink<sup>&reg;</sup> GSE Documentation
 
+## Version 2.0 released 11/20/2017
+
 LoopLink<sup>&reg;</sup> GSE is a software service that enables companies to easily offer their customers a quick estimate of how much they can save using geothermal heating and cooling in their home.
 
 ## Who Should Use LoopLink<sup>&reg;</sup> GSE?

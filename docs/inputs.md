@@ -409,7 +409,7 @@ Optional fields default to standard values but will accept user inputs to furthe
 
 > **Accepts:** Any number greater than zero
 
-> **Example:** A home with two stories above grade with equal area. The first floor has an average ceiling height of 10 ft and the second floor has an average ceiling height of 8 ft = (8+10)/2 = 9 ft average ceiling height.
+> **Example:** Assume the home with two stories above grade, both with equal amount of conditioned area. The first floor has an average ceiling height of 10 ft and the second floor has an average ceiling height of 8 ft = (8+10)/2 = 9 ft average ceiling height.
 
 ## Above Grade Floors
 
@@ -442,7 +442,7 @@ Optional fields default to standard values but will accept user inputs to furthe
 
 > **Type:** String
 
-> **Description:** Allows peak load calculation adjustment for uninsulated but conditioned basement type
+> **Description:** Peak load calculation adjustment for uninsulated but conditioned basement type
 
 > **Default:** insulated
 
@@ -457,7 +457,7 @@ Optional fields default to standard values but will accept user inputs to furthe
 
 > **Type:** Float
 
-> **Description:** Average below grade of basement walls.
+> **Description:** Average below grade depth of basement walls.
 
 > **Default:** 8.0 ft
 

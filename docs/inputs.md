@@ -148,7 +148,6 @@ It is possible to directly enter a location by signed latitude and longitude. Wh
 
 > **Notes:** While it is possible to enter a zero value for below grade area, the sum of above grade area and below grade area must be greater than zero to avoid an error.
 
-
 ## Age of Home
 > **Name:** `age_home`
 
@@ -368,7 +367,62 @@ Optional fields default to standard values but will accept user inputs to furthe
 
 > **Accepts:** 0 <= vol_per_res_hwg <= 150gal
 
- 
+## Ventilation CFM
+> **Name:** `ventilation_cfm`
+
+> **Type:** float
+
+> **Description:** Ventilaton airflow rate to include in the load estimate calculation 
+
+> **Default:** 0
+
+> **Units:**
+>> - **IP:** Cubic feet per minute (cfm)
+- **SI:** Cubic meters per hour
+
+> **Accepts:** Any number greater than zero
+
+## Ventilation Energy Recovery Effectiveness
+> **Name:** `ventilation_eff`
+
+> **Type:** float
+
+> **Description:** The energy recovery effectiveness of the ERV/HRV fresh air ventilation system (expressed as a decimal)
+
+> **Default:** 0
+
+> **Accepts:** Any number between 0 and 1.
+
+## Average Above Grade Ceiling Height
+
+> **Name:** `avg_above_grade_ceiling_height`
+
+> **Type:** Float
+
+> **Description:** Average ceiling height of above grade conditioned space.
+
+> **Default:** 8.0 ft
+
+> **Units:**
+>> - **IP:** Feet
+- **SI:** Meters
+
+> **Accepts:** Any number greater than zero
+
+> **Example:** A home with two stories above grade with equal area. The first floor has an average ceiling height of 10 ft and the second floor has an average ceiling height of 8 ft = (8+10)/2 = 9 ft average ceiling height.
+
+## Above Grade Floors
+
+> **Name:** `above_grade_floors`
+
+> **Type:** Float
+
+> **Description:** The number of above grade floors/stories in the home.
+
+> **Default:** 1.5
+
+> **Accepts:** Any number greater than one
+
 ## Basement
 > **Name:** `basement`
 
@@ -382,6 +436,40 @@ Optional fields default to standard values but will accept user inputs to furthe
 >> - conditioned
 - unconditioned
 - slab
+
+## Basement Insulation
+> **Name:** `basement_insulation`
+
+> **Type:** String
+
+> **Description:** Allows peak load calculation adjustment for uninsulated but conditioned basement type
+
+> **Default:** insulated
+
+> **Accepts:**
+>> - insulated
+- uninsulated
+
+> **Notes:** This input will only impact the load calculations for 'conditioned' basement type.
+
+## Below Grade Depth
+> **Name:** `below_grade_depth`
+
+> **Type:** Float
+
+> **Description:** Average below grade of basement walls.
+
+> **Default:** 8.0 ft
+
+> **Units:**
+>> - **IP:** Feet
+- **SI:** Meters
+
+> **Accepts:** Any number greater than zero
+
+> **Example:** A walkout basement with 1/2 of the walls 8 ft below grade and 1/2 of the walls 4 ft below grade will have (8+4)/2 = 6 ft average below grade depth.
+
+> **Notes:** This input will only impact the load calculations for 'conditioned' basement type.
 
 ## Insulation Level
 > **Name:** `insulation_level`
@@ -411,6 +499,7 @@ Optional fields default to standard values but will accept user inputs to furthe
 >> - loose
 - semi-loose
 - average
+-semi-tight
 - tight
 
 ## Ductwork Placement
@@ -425,6 +514,7 @@ Optional fields default to standard values but will accept user inputs to furthe
 > **Accepts:**
 >> - conditioned
 - unconditioned basement
+- unconditioned_basement_leaky
 - unconditioned attic
 
 ## Ductwork Sealing
@@ -437,9 +527,11 @@ Optional fields default to standard values but will accept user inputs to furthe
 > **Default:** average
 
 > **Accepts:**
->> - low
+>> - unsealed
+- partial
 - average
-- high
+- notable
+- extreme
 
 ## Ductwork Insulation
 > **Name:** `duct_insulation`
@@ -448,12 +540,14 @@ Optional fields default to standard values but will accept user inputs to furthe
 
 > **Description:** Describes how well insulated ducts are from transmission loss.
 
-> **Default:** average
+> **Default:** R6
 
 > **Accepts:**
->> - low
-- average
-- high
+>> - R0
+- R2
+- R4
+- R6
+- R8
 
 ## Utility Rates
 
